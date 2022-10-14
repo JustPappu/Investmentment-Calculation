@@ -1,0 +1,13 @@
+name: Investment Calculator.js
+on: push
+jobs:
+     build project:
+      name: Investment Calculator.js
+      run-on: ubuntu latest
+      steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Install NPM dependencies
+      uses: npm install
+    - name: Building Static Web App
+      uses: npm run build
